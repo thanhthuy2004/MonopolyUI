@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    font-family: 'Rowdies';
+}
+
+body {
+    background: radial-gradient(ellipse at center, #E26EE5, #49108B);
+}
+
+.container {
+    margin: 0;
+}
+
+/* TOP */
+.top-part {
+    display: flex;
+    height: 150px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.score-and-money {
+    position: relative;
+    width: 30%;
+    background: #ffffff;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 12px;
+}
+
+.top-name-user {
+    text-transform: uppercase;
+    background-color: #8aa905;
+    color: #ffffff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 8px 32px 8px 8px;
+    text-align: right;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.img-frame {
+    position: absolute;
+    top: -5px;
+    left: 18px;
+    border: #ffffff 3px solid;
+    width: 100px;
+    height: 100px;
+    background-image: url("/src/assert/images/avatar/meo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #6e19dc;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.coins {
+    text-align: right;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.money-icon {
+    color: #ffd000;
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.lable-room p {
+    background: #ecb103;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px 120px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.web-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: 12px 0;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0a83d8;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-container-exit {
+    background-color: #ff0066;
+}
+
+.setting-icon {
+    color: #ffffff;
+    margin: auto 10px;
+    cursor: pointer;
+    font-size: 29px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 44px;
+}
+
+.setting-icon:hover , .options-btn:hover{
+    filter: drop-shadow(0 0 4px #F3F8FF);
+}
+
+.top-part-two{
+    display: flex;
+    justify-content: space-evenly;
+}
+.password-div{
+    background-color: #0a83d8;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+.password-div input{
+    padding: 8px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+.options-div{
+    display: flex;
+    justify-content: space-between;
+}
+.options-btn{
+    margin: 0 8px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #b3b0bb;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.options-btn, .password-div{
+    padding: 8px 32px;
+}
+
+/* CENTER */
+.center-part {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.center-part-user {
+    position: relative;
+    border: solid 2px #ffffff;
+    border-radius: 15px;
+    width: 220px;
+    height: 300px;
+    background-color: #eadacb;
+    margin: 12px;
+}
+
+.player-name {
+    position: absolute;
+    top: -8px;
+    left: 2px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.player-br-fst {
+    background-color: #ff0066;
+}
+
+.player-br-sed {
+    background-color: #0a83d8;
+}
+
+.player-br-thr {
+    background-color: #ecb103;
+}
+
+.player-br-forth {
+    background-color: #8aa905;
+}
+
+.img-frame-player {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    border: #ffffff 3px solid;
+    width: 70px;
+    height: 70px;
+    background-image: url("/src/assert/images/avatar/meo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.main-room-player {
+    position: absolute;
+    top: 45px;
+    right: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #0a83d8;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+}
+
+/* =================== */
+/* =======BOTTOM============ */
+.bottom-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.btn-play-game {
+    background-color: #0a83d8;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px 185px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-play-game:hover {
+    filter: drop-shadow(0 0 4px #F3F8FF);
+}

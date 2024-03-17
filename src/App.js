@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './assert/style/wait-room.css'
+import WaitRoomTop from './components/wait-room/wait-room-top';
+import WaitRoomCenter from './components/wait-room/wait-room-center';
+import WaitRoomBottom from './components/wait-room/wait-room-bottom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <WaitRoomTop/>
+      <WaitRoomCenter/>
+      <WaitRoomBottom/>
     </div>
   );
 }
