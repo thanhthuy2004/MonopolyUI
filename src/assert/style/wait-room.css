@@ -8,17 +8,19 @@ body {
 }
 
 .container {
-    margin: 0;
+    width: 100%;
+    margin: auto;
 }
 
 /* TOP */
 .top-part {
     display: flex;
-    height: 150px;
-    margin: auto;
+    flex-direction: column;
+}
+.top-part-one {
+    display: flex;
     justify-content: space-between;
 }
-
 .score-and-money {
     position: relative;
     width: 30%;
@@ -74,6 +76,7 @@ body {
     padding: 24px 120px;
     margin-top: 12px;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .web-options {
@@ -97,19 +100,6 @@ body {
     background-color: #ff0066;
 }
 
-.setting-icon {
-    color: #ffffff;
-    margin: auto 10px;
-    cursor: pointer;
-    font-size: 29px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 44px;
-}
-
-.setting-icon:hover , .options-btn:hover{
-    filter: drop-shadow(0 0 4px #F3F8FF);
-}
 
 .top-part-two{
     display: flex;
@@ -139,6 +129,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    color: #ffffff;
 }
 .options-btn, .password-div{
     padding: 8px 32px;
@@ -146,20 +137,27 @@ body {
 
 /* CENTER */
 .center-part {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.center-part-left {
     height: 50%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 12px;
+    /* border: 2px solid #ffffff; */
 }
 
 .center-part-user {
     position: relative;
     border: solid 2px #ffffff;
     border-radius: 15px;
-    width: 220px;
+    width: 180px;
     height: 300px;
     background-color: #eadacb;
     margin: 12px;
+   
 }
 
 .player-name {
@@ -170,6 +168,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 12px 0;
+    color: #ffffff;
 }
 
 .player-br-fst {
@@ -214,14 +213,120 @@ body {
     border-radius: 5px;
     border: 3px solid #ffffff;
 }
+/* chat side */
+.chat-room-part{
+    position: relative;
+    border: solid 2px #ffffff;
+    border-radius: 15px;
+    width: 350px;
+    height: 310px;
+    background-color: #eadacb;
+    margin-top: 16px;
+    
+}
+.title-chat{
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    padding-top: 8px;
+    margin: 0;
+}
 
+.sendMessDiv{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 6px;
+    bottom: 12px;
+    width: 100%;
+}
+.inputMess {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.sendBtn{
+    background-color: #0a83d8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.icon-send-mess{
+    font-size: 14px;
+}
+.messageList{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    margin: 0;
+    height: 230px;
+    padding: 0px 2px;
+    overflow-y: auto;
+}
+
+.messageList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messageList::-webkit-scrollbar-thumb {
+    background-color: #0a83d8;
+}
+
+.messageList::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0;
+    margin-right: 120px;
+}
+.messageOwner{
+    margin-left: 120px;
+    margin-right: 4px;
+}
+.messageBlock{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.messageBlockOwner{
+    justify-content: right;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.sendTime, .sendName{
+font-size: 8px;
+font-weight: 400;
+margin-left: 4px;
+}
+.sendName{
+    padding: 2px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.messageContent{
+    display: flex;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 4px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 4px;
+}
+.messageContentOwner{
+   justify-content: flex-end;
+}
 /* =================== */
 /* =======BOTTOM============ */
 .bottom-part {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
 }
 
 .btn-play-game {
@@ -232,9 +337,11 @@ body {
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.btn-play-game:hover {
+
+/* HOVER */
+.setting-icon:hover, .icon-send-mess:hover , .options-btn:hover, .btn-play-game:hover, .sendBtn:hover{
     filter: drop-shadow(0 0 4px #F3F8FF);
 }

@@ -6,7 +6,7 @@ body{
     background: radial-gradient(ellipse at center, #E26EE5, #49108B);
 }
 
-.main-container{
+.main-container-login{
     width: 100%;
     min-height: 100vh;
     height: max-content;
@@ -14,6 +14,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* flex-direction: row; */
 }
 
 .left-container{
@@ -32,7 +33,6 @@ body{
     color: #F3F8FF;
     text-align: center;
     text-shadow: 0 0 10px #b484f4, 0 0 20px #8a43e7, 0 0 30px #7E30E1;
-    cursor: default;
 }
 
 .right-container{
@@ -45,7 +45,7 @@ body{
 
 .form-container{
     width: 100%;
-    border: 2px solid #2d2d2d;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     position: relative;
 }
@@ -57,14 +57,18 @@ body{
 .form-title{
     font-size: 25px;
     margin: 20px 0;
+    color: #ffffff;
+    text-align: center;
 }
 
 .input-text{
-    width: calc(100% - 30px);
-    padding: 10px 15px;
+    /* width: calc(100% - 30px); */
+    width: 100%;
+    padding: 10px 20px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid #2d2d2d;
+    border: 1px solid #ffffff;
+    outline: none;
 }
 
 #error-message{
@@ -74,20 +78,20 @@ body{
 
 .button-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     margin: 30px 0 20px;
     width: 100%;
 }
 
 .button{
-    padding: 15px 35px;
+    padding: 15px 20px;
     background-color: #7E30E1;
     cursor: pointer;
     color: #F3F8FF;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 15px;
     border: none;
-    margin: 5px 0;
+    margin: 5px 10px;
 }
 
 .button:hover{
@@ -102,5 +106,10 @@ body{
     display: block;
     width: 100%;
     text-align: center;
-    color: #49108B;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#missing-password:hover{
+    text-decoration: underline;
 }
