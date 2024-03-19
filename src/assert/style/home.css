@@ -5,7 +5,7 @@ body {
 .main-container {
     height: 90vh;
     width: 90vw;
-    padding:  5vh 5vw;
+    padding: 5vh 5vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ body {
     margin: 0;
 }
 
-.money-container{
+.money-container {
     display: flex;
     width: min-content;
     align-items: center;
@@ -61,29 +61,29 @@ body {
     border-radius: 10px;
 }
 
-.money-container>div{
+.money-container>div {
     display: flex;
     align-items: center;
     margin: 0 10px;
 }
 
-.money-icon{
+.money-icon {
     color: #ffd000;
     font-size: 20px;
 }
 
-.money{
+.money {
     margin: 0 5px 0;
     color: #ffd000;
     font-size: 20px;
 }
 
-.gem-icon{
+.gem-icon {
     color: #0077ff;
     font-size: 20px;
 }
 
-.money.gem{
+.money.gem {
     color: #0077ff;
 }
 
@@ -199,9 +199,10 @@ body {
     height: 70vh;
 }
 
-.modal-body.modal-height{
+.modal-body.modal-height {
     height: 70vh;
 }
+
 .modal-left-container {
     width: 60%;
     display: flex;
@@ -250,7 +251,7 @@ body {
     padding: 10px;
 }
 
-.item-quantity{
+.item-quantity {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -267,7 +268,7 @@ body {
     padding-left: 10px;
 }
 
-.sort-info-chosen-item-container{
+.sort-info-chosen-item-container {
     display: flex;
     height: 30%;
     width: 100%;
@@ -293,18 +294,18 @@ body {
     border-radius: 5%;
 }
 
-.chosen-item-info-container{
+.chosen-item-info-container {
     max-width: 60%;
 }
 
-.chosen-item-name{
+.chosen-item-name {
     margin: 0;
     max-height: 80%;
     overflow: hidden;
     margin-top: 5px;
 }
 
-.chosen-item-quantity{
+.chosen-item-quantity {
     color: #49108B;
     margin: 0;
 }
@@ -350,10 +351,21 @@ body {
 }
 
 /* modal chọn phòng */
-.modal-body{
+.modal-body {
     height: 50vh;
+    flex-direction: column;
+    align-items: center;
 }
-.listRoom{
+
+.search-room {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-room-input{
+    margin-left: 12px;
+}
+.listRoom {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -375,28 +387,34 @@ body {
     background-color: #E26EE5;
     border-radius: 4px;
 }
-.room{
+
+.room {
     padding: 10px 20px;
     background-color: #7E30E1;
     color: #F3F8FF;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin: 8px;
     border-radius: 5px;
     border: none;
-    max-width: 200px;
     max-height: 50px;
+    width: 100%;
+    cursor: pointer;
 }
-.room:hover, .createBtn:hover{
+
+.room:hover,
+.createBtn:hover {
     filter: drop-shadow(0 0 4px #7516f2);
 }
+
 /* modal tạo phòng */
-.createRoom{
+.createRoom {
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.createBtn{
+.createBtn {
     padding: 8px;
     border: none;
     color: #F3F8FF;

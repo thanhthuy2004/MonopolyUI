@@ -1,7 +1,7 @@
 import React from 'react';
 import userAvt from '../assert/images/avatar/user.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGear, faCircle, faEnvelope, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faGear, faCircle, faEnvelope, faBell, faCoins, faGem } from '@fortawesome/free-solid-svg-icons';
 
 const HomeTop = () => {
     return (
@@ -14,11 +14,12 @@ const HomeTop = () => {
         </div>
         <div className="money-container">
             <div className="coin-container">
-                <i className="fa-solid fa-coins money-icon"></i>
+                <i className="fa-solid fa-coins "></i>
+            <FontAwesomeIcon icon={faCoins} className="money-icon"/>
                 <p className="money coin">999,999,999</p>
             </div>
             <div className="diamond-container">
-                <i className="fa-solid fa-gem gem-icon"></i>
+            <FontAwesomeIcon icon={faGem} className="gem-icon"/>
                 <p className="money gem">999,999</p>
             </div>
         </div>
